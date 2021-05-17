@@ -1,0 +1,1 @@
+function GoogleAnalytics(url,title,value){var redirectTriggered=false;gtag('event','ButtonClick',{[title]:value,'event_callback':function(){if(url!=null){redirectTriggered=true;window.open(url);}}});setTimeout(function(){if(!redirectTriggered&&url!=null){window.open(url);}},1500);}
